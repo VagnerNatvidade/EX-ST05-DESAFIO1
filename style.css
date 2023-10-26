@@ -7,10 +7,7 @@
 :root {
   font-size: 62.5%;
   --white: #fff;
-}
-
-.hide {
-  display: none;
+  --bg-btn: #ff9500;
 }
 
 body {
@@ -20,6 +17,15 @@ body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(45deg, #190361 0%, #b0f 100%);
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  border: none;
+  background: transparent;
 }
 
 main {
@@ -42,8 +48,51 @@ main {
   margin-bottom: 2.4rem;
 }
 
-#fortune-coockie:hover {
+.screen1 img:hover {
   animation: shake 0.5s infinite;
+}
+
+/*screen2*/
+.screen2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.screen2 h1 {
+  font-size: 2.4rem;
+}
+
+.screen2 p {
+  padding: 1.2rem;
+  font-size: 2.4rem;
+  font-family: "Dancing Script", cursive;
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+}
+
+.screen2 img {
+  margin: 4.2rem 0;
+}
+
+.screen2 button {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1.6rem;
+  border-radius: 4px;
+  font-weight: 700;
+  color: var(--white);
+  background: var(--bg-btn);
+  transition: .3s;
+}
+
+.screen2 button:hover {
+  padding: 1.6rem 2.4rem;
+  background: #ffb752;
+}
+
+#message {
+  animation: scaleUpMessage 1s ease;
 }
 
 @keyframes shake {
@@ -79,5 +128,20 @@ main {
   }
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes scaleUpMessage {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
   }
 }
