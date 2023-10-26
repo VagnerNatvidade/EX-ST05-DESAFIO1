@@ -10,17 +10,18 @@
   --bg-btn: #ff9500;
 }
 
+div.hide {
+  display: none;
+}
+
 body {
   display: grid;
   place-items: center;
   height: 100vh;
+  padding: 2.4rem;
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(45deg, #190361 0%, #b0f 100%);
-}
-
-.hide {
-  display: none;
 }
 
 button {
@@ -83,7 +84,7 @@ main {
   font-weight: 700;
   color: var(--white);
   background: var(--bg-btn);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .screen2 button:hover {
