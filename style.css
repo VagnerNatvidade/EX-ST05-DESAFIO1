@@ -22,6 +22,8 @@ body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(45deg, #190361 0%, #b0f 100%);
+  animation: gradient 5s ease infinite;
+  background-size: 200% 200%;
 }
 
 button {
@@ -144,5 +146,17 @@ main {
     transform: scale(1);
     -webkit-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
